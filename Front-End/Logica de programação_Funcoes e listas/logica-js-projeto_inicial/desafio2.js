@@ -3,7 +3,7 @@ function calcImc(peso, altura) {
   let imc = peso / (altura * altura);
   console.log(`Seu índice IMC é ${imc}`);
 }
-calcImc(82, 1.69);
+calcImc(80, 1.7);
 
 // Crie uma função que calcule o valor do fatorial de um número passado como parâmetro.
 /*function calcFatorial (fatorial){
@@ -16,7 +16,7 @@ function cotacaoDolar(valorPossuido) {
   let cotacao = valorPossuido * valorDolarAtual;
   console.log(cotacao);
 }
-cotacaoDolar(50);
+cotacaoDolar(100);
 
 // Crie uma função que mostre na tela a área e o perímetro de uma sala retangular, utilizando altura e largura que serão dadas como parâmetro.
 function areaPerimetro(altura, largura) {
@@ -24,7 +24,7 @@ function areaPerimetro(altura, largura) {
   let calcPerimetro = 2 * altura + 2 * largura;
   console.log(`A área é de ${calcArea} e o perímetro é de ${calcPerimetro}`);
 }
-areaPerimetro(10, 20);
+areaPerimetro(20, 30);
 
 // Crie uma função que mostre na tela a área e o perímetro de uma sala circular, utilizando seu raio que será fornecido como parâmetro. Considere Pi = 3,14. (areaCirc = Pi.r2) (perimetroCir = 2.Pi.r)
 function calcCirc(raio) {
@@ -33,7 +33,7 @@ function calcCirc(raio) {
   let perimetroCirc = 2 * pi * raio;
   console.log(`A área é ${areaCirc} e o perímetro é ${perimetroCirc}`);
 }
-calcCirc(5);
+calcCirc(10);
 
 //Crie uma função que mostre na tela a tabuada de um número dado como parâmetro.
 function tabuadaDo(numero) {
@@ -42,4 +42,4 @@ function tabuadaDo(numero) {
     console.log(`${i} X ${n} = ${i * n}`);
   }
 }
-tabuadaDo(15);
+tabuadaDo(20);
