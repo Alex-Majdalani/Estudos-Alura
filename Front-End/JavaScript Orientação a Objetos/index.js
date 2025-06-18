@@ -5,15 +5,19 @@ class Cliente {
 
 class ContaCorrente {
   agencia;
-  saldo;
+  _saldo = 0;
 
   depositar(valor) {
-    this.saldo += valor;
+    if (valor > 0) {
+      this._saldo += valor;
+    } else {
+      console.log(`O valor depositado não pode ser negativo`);
+    }
   }
 
   sacar(valor) {
-    if (this.saldo >= valor) {
-      this.saldo -= valor;
+    if (this._saldo >= valor) {
+      this._saldo -= valor;
     } else {
       console.log(`Valor incompatível com o saldo em conta.`);
     }
@@ -29,15 +33,9 @@ cliente2.nome = "Alice";
 cliente2.cpf = 12325474585;
 
 const contaCorrenteRicardo = new ContaCorrente();
-contaCorrenteRicardo.saldo = 0;
 contaCorrenteRicardo.agencia = 1001;
 
-console.log(contaCorrenteRicardo.saldo);
-contaCorrenteRicardo.saldo = 100;
-console.log(contaCorrenteRicardo.saldo);
+contaCorrenteRicardo.depositar(100);
 contaCorrenteRicardo.sacar(50);
-contaCorrenteRicardo.depositar(200);
 
-console.log(contaCorrenteRicardo.saldo);
-console.log(cliente1);
-console.log(cliente2);
+console.log(contaCorrenteRicardo);
