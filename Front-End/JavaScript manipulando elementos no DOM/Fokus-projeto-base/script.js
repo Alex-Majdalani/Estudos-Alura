@@ -14,7 +14,11 @@ const audioPlay = new Audio("./sons/play.wav");
 const audioPause = new Audio("./sons/pause.mp3");
 const audioAlarmeFim = new Audio("./sons/beep.mp3");
 
-musica.loop = true;
+const imgPlay = document.createElement("img");
+imgPlay.src = "./imagens/play_arrow.png";
+const imgPause = document.createElement("img");
+imgPause.src = "./imagens/pause.png";
+iniciarOuPausarBt.appendChild(imgPlay);
 
 let tempoDecorridoEmSegundos = 5;
 let intervaloId = null;
